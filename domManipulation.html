@@ -1,0 +1,33 @@
+<html>
+<body>
+<h1>Students</h1>
+
+    <ul id="fruit">
+        <li>Bananas</li>
+        <li>Oranges</li>
+        <li>Apples</li>
+    </ul>
+<script>
+    function appendList(array, element, id){
+    let new_student = document.createElement(element);
+    new_student.innerHTML = array;
+    document.getElementById(id).appendChild(new_student);
+}
+let students = ["Jeff", "Jenny", "Javier", "Joslyn", "Joe", "Jane", "Django"];
+appendList(students, "h1", "fruit")
+</script>  
+
+
+
+    <div id="message">
+        Hello World!
+    </div> 
+<script>
+    let message = "<h1>Look, I'm a dynamic header!</h1>";
+    document.getElementById("message").innerHTML = message;
+</script>   
+
+
+</body>
+</html>
+
